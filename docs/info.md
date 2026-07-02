@@ -9,12 +9,22 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+This project implements a 1-bit full adder.
+
+- `ui_in[0]` is operand A
+- `ui_in[1]` is operand B
+- `ui_in[2]` is carry-in
+- `uo_out[0]` is the sum bit
+- `uo_out[1]` is the carry-out bit
+
+The remaining input and output pins are tied off because the design does not use them.
 
 ## How to test
 
-Explain how to use your project
+Drive the three least-significant input bits with all 8 combinations and check the two least-significant output bits against the full-adder truth table.
+
+For local simulation, run the cocotb test in `test/`.
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+No external hardware is required.
